@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_managements",
+  "info": {
+    "singularName": "contentmanagement",
+    "pluralName": "content-managements",
+    "displayName": "ContentManagement"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    },
+    "contentTags": {
+      "type": "text"
+    },
+    "contentUrl": {
+      "type": "text"
+    },
+    "contentType": {
+      "type": "enumeration",
+      "enum": [
+        "PDF",
+        "Image",
+        "Video",
+        "Audio",
+        "Text"
+      ],
+      "required": true
+    },
+    "userID": {
+      "type": "text"
+    },
+    "upload": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
